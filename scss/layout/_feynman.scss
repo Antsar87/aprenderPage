@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as *;
+
+.feynman {
+  padding-top: 100px;
+  height: 790px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &__title {
+    width: 775px;
+    text-align: center;
+    font-weight: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    margin-top: 70px;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+  &__link {
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    text-decoration: none;
+    color: $c-blue;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+
+    &::after {
+      content: '\2192';
+      position: absolute;
+      right: -45px;
+      top: -5px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 867px;
+    height: 637px;
+    z-index: -1;
+  }
+}

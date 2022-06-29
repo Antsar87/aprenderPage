@@ -1,0 +1,40 @@
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 60px auto 0 auto;
+  width: 1100px;
+  row-gap: 60px;
+  z-index: 1000;
+
+  &_theme_dark {
+    margin-top: 80px;
+    row-gap: 80px;
+  }
+
+  &__cell {
+    width: 250px;
+    list-style: none;
+
+    &_theme_dark {
+      width: 200px;
+    }
+  }
+
+  &__heading {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: bold;
+
+    &_theme_dark {
+      line-height: 1.15;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,71 @@
+@use '../abstracts/variables' as *;
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  background: $c-gray;
+  display: flex;
+  z-index: 1000;
+  /* parameters for the header section */
+
+  .logo_place_header {
+    position: absolute;
+    top: 30px;
+    left: 64px;
+    height: 31px;
+    width: 154px;
+    z-index: 1000;
+  }
+
+  &__title {
+    align-self: center;
+    margin-left: 64px;
+    width: 730px;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: bold;
+    z-index: 1000;
+  }
+
+  &__subtitle {
+    position: absolute;
+    bottom: 30px;
+    left: 64px;
+    width: 388px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    z-index: 1000;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $c-blue;
+    position: relative;
+    
+    &::after {
+      content: '\2192';
+      font-size: 29px;
+    }
+  }
+
+  &__main-ilustration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 608px;
+    width: 756px;
+  }
+
+  &__square {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    width: 568px;
+    height: 568px;
+    background: $c-blue;
+    z-index: -1;
+  }
+}
